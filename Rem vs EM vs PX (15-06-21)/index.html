@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>.rem VS .em VS .px</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		html{
+			font-size: 10px;
+		}
+		div{
+			text-align: center;
+			padding: 50px;
+			background: #03a9f4;
+			font-size: 20px;
+		}
+		h1{
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+<!--
+1em = 16px.
+rem = em.
+2rem = 32px (old size default). 
+1rem = 10px (root/html).
+if want work on whole page relative use rem, rem take from root size. 
+if you did't want root/html & want different size for diff. div use em.
+em take size from nearest parent below ex. h1 take div size, 1em = 20px.
+if div not have size h1 take nerest parent root/html size.
+-->
+	<div>
+		<h1>Welcome to my channel Thapatechnical :)</h1>
+	</div>
+</body>
+</html>
